@@ -5,6 +5,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuBtn = document.getElementById('menu-btn');
   const nav = document.getElementById('global-nav');
 
+  // Handle Video Autoplay failure (e.g. iOS Low Power Mode) to hide default play button
+  const mvVideo = document.querySelector('.video-container video');
+  if (mvVideo) {
+    const playPromise = mvVideo.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {
+        // Autoplay prevented by low power mode or browser policy.
+        // Hide the video entirely to remove the forced native play icon.
+        mvVideo.style.display = 'none';
+      });
+    }
+  }
+
   window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
       header.classList.add('scrolled');
