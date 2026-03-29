@@ -12,6 +12,12 @@
   --header-height: 80px;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }

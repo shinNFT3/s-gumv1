@@ -95,30 +95,19 @@
     </div>
 
     <!-- Google Calendar Section -->
-    <section class="section">
+    <section class="section" style="padding-top: 60px; padding-bottom: 100px;">
       <div class="container">
-        <h2 class="section-title">Googleカレンダー</h2>
         <p class="text-center mb-4" style="font-weight:bold;">祝日等もしっかり反映された最新のスケジュールはこちらをご確認ください。<br>※月曜日からの1週間表示になっています。</p>
-        <div style="max-width: 1000px; margin: 0 auto; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+        <div style="max-width: 1000px; margin: 0 auto; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background: var(--white); min-height: 60vh; display:flex; flex-direction:column;">
           <!-- IFRAME PLACEHOLDER -->
-          <div style="background: var(--white); padding: 50px; text-align: center; border: 2px dashed #ccc;">
-            <p style="color: var(--primary); font-weight: bold; margin-bottom: 10px; font-size: 1.2rem;"><i class="fa-brands fa-google"></i> ここにGoogleカレンダーを埋め込みます</p>
-            <p style="font-size: 0.95rem; color: var(--text-light);">チャットでカレンダーのURLリンクを貼り付けていただければ、こちらに入れ込みます！</p>
+          <div style="flex-grow: 1; display:flex; flex-direction:column; justify-content:center; align-items:center;  padding: 50px; text-align: center; border: 2px dashed #ccc; background: #fafafa;">
+            <p style="color: var(--primary); font-weight: bold; margin-bottom: 15px; font-size: 1.3rem;"><i class="fa-brands fa-google"></i> ここにGoogleカレンダーの週間表示が表示されます</p>
+            <p style="font-size: 1rem; color: var(--text-light); line-height: 1.6;">チャットでカレンダーのURLリンクをお待ちしております！</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Weekly Schedule (Dynamic via JS) -->
-    <section class="section bg-light">
-      <div class="container">
-        <h2 class="section-title">基本の週間スケジュール</h2>
-        <p class="text-center mb-4">基本となる各曜日のクラス一覧です。休講などは上のカレンダーをご確認ください。</p>
-        <div class="schedule-container" id="schedule-container">
-          <!-- Populated by script.js -->
-        </div>
-      </div>
-    </section>
   </main>
 
   <div class="sticky-cta" id="sticky-cta">
