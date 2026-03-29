@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
       { day: '日', events: [{start: '終日', end: '', name: 'クローズ or イベント', type: 'event', desc: '通常クラスはお休みです。特設イベントやセミナーなどが開催される場合があります。'}] }
     ];
 
-    let scheduleHTML = '<div class="concept-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-bottom: 20px;">';
+    let scheduleHTML = '<div class="concept-grid" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 25px; margin-bottom: 20px;">';
     
     scheduleDataInfo.forEach(dayInfo => {
       scheduleHTML += `
