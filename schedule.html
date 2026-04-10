@@ -92,7 +92,8 @@
     .schedule-table-wrapper table {
         width: 100%;
         min-width: 700px; /* Force minimum width to prevent squishing on mobile */
-        border-collapse: collapse;
+        border-collapse: separate;
+        border-spacing: 0;
         table-layout: fixed;
     }
     .schedule-table-wrapper th, .schedule-table-wrapper td {
@@ -113,6 +114,16 @@
         color: #000;
         font-size: 14px;
         border-right: 2px solid #000;
+        /* 横スクロール時に TIME 列を固定 */
+        position: sticky;
+        left: 0;
+        z-index: 2;
+    }
+    /* ヘッダー行の TIME セルはさらに上に重なるように */
+    .schedule-table-wrapper thead th.time-col {
+        z-index: 3;
+        background-color: #000;
+        color: #fff;
     }
     .schedule-table-wrapper .class-box {
         display: flex;
