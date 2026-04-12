@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>よくあるご質問 | SCORPION GYM | 柔術・MMAジム</title>
+  <meta name="description" content="SCORPION GYMへの入会や体験、柔術・MMAのレッスンに関するよくあるご質問と回答をまとめました。">
+  <!-- Same head links as other pages -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Noto+Sans+JP:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/0405.png">
+  <style>
+    .faq-container { max-width: 800px; margin: 0 auto; }
+    .faq-item {
+      background: var(--white);
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      overflow: hidden;
+    }
+    .faq-question {
+      padding: 20px 25px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 1.1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--gray);
+      transition: background 0.3s;
+    }
+    .faq-question:hover { background: #eee; }
+    .faq-question::after {
+      content: '\f078'; /* fa-chevron-down */
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      transition: transform 0.3s;
+      color: var(--primary);
+    }
+    .faq-item.active .faq-question::after { transform: rotate(180deg); }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.4s ease;
+      background: var(--white);
+      padding: 0 25px;
+    }
+    .faq-item.active .faq-answer {
+      max-height: 500px; /* arbitrary max height */
+      padding: 20px 25px;
+      border-top: 1px solid #eee;
+    }
+    .faq-category { font-size: 1.5rem; font-weight: 800; margin: 40px 0 20px; border-bottom: 2px solid var(--primary); display: inline-block; padding-bottom: 5px; }
+  </style>
+</head>
+<body class="sub-page">
+
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/images/s-gym_logo.png" alt="SCORPION GYM Logo" width="180" decoding="async">
+        </a>
+      </div>
+      <button class="menu-btn" id="menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+      <nav class="nav" id="global-nav">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="beginners.html">はじめての方へ</a></li>
+          <li><a href="pricing.html">クラス・料金</a></li>
+          <li><a href="instructors.html">インストラクター</a></li>
+          <li><a href="schedule.html">スケジュール</a></li>
+          <li><a href="access.html">アクセス</a></li>
+          <li><a href="faq.html" class="active">よくあるご質問</a></li>
+        </ul>
+        <div class="nav-cta"><a href="contact.html" class="nav-btn">体験予約</a></div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <h1 class="page-title">よくあるご質問</h1>
+        <p>Q &amp; A</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="faq-container">
+          
+          <h2 class="faq-category">入会・対象について</h2>
+          
+          <div class="faq-item">
+            <div class="faq-question">Q. 中年なのですが入会できますか？</div>
+            <div class="faq-answer">
+              <p>A. まったく問題ありません。当ジムの会員の平均年齢は40代で、同年代の方も多く通っています。年齢を気にせず始められます。</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">Q. 何歳から入会できますか？</div>
+            <div class="faq-answer">
+              <p>A. 高校生になる年齢から入会可能です。未成年の方は保護者の同意が必要です。</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">Q. 格闘技も運動も未経験で、しかも肥満体型です。体力がなくても大丈夫ですか？</div>
+            <div class="faq-answer">
+              <p>A. ご安心ください。入会者の9割以上が未経験からのスタートです。水分補給も自由で、インストラクターがその方の体力に合わせて無理のないように配慮します。継続することで自然と体力もついてきます。</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" style="color: #e60012;">Q. 初心者ですが、慣れるまで初級クラスから参加した方が良いですか？</div>
+            <div class="faq-answer">
+              <p style="color: #e60012;">A. 初心者の方でも、どのクラスから始めていただいても大丈夫です。（安全のため、スパークラスのみインストラクターのレクチャーを受けた後に参加可能です）</p>
+            </div>
+          </div>
+
+          <h2 class="faq-category">料金・通い方について</h2>
+          
+          <div class="faq-item">
+            <div class="faq-question">Q. 全部のクラスに参加すると追加料金が必要ですか？</div>
+            <div class="faq-answer">
+              <p>A. 必要ありません。どのクラスに何回参加しても、月会費は一律です。</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">Q. 仕事の都合で行けない日が続いたり、練習開始時間に遅れてしか行けないのですが？</div>
+            <div class="faq-answer">
+              <p>A. 問題ありません。開館時間内であれば、いつ来ても・いつ帰っても自由です。シフト制のお仕事の方も多く通っています。</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">Q. 練習に行く際、予約や出欠連絡は必要ですか？</div>
+            <div class="faq-answer">
+              <p>A. 必要ありません。会員の方は、その日その時の状況に合わせて、営業時間内であれば都合の良いタイミングで参加できます。</p>
+            </div>
+          </div>
+
+          <h2 class="faq-category">目的・効果について</h2>
+          
+          <div class="faq-item">
+            <div class="faq-question">Q. ダイエット目的でも通えますか？</div>
+            <div class="faq-answer">
+              <p>A. もちろんです。全身の筋肉を使うため、ダイエットはもちろん、ストレス発散や健康づくりにも最適です。</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">Q. 護身術として効果はありますか？</div>
+            <div class="faq-answer">
+              <p>A. はい。ブラジリアン柔術は護身術を前提に発展した格闘技で、実践的かつ安全に身につけられます。</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">Q. 試合に出る必要はありますか？</div>
+            <div class="faq-answer">
+              <p>A. 強制は一切ありません。試合を目指す方から、健康維持・運動不足解消が目的の方まで、目的は人それぞれです。</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="sticky-cta" id="sticky-cta">
+    <a href="https://lin.ee/6nmk39m" class="cta-btn btn-line"><i class="fa-brands fa-line"></i> LINE相談</a>
+    <a href="contact.html#reserve" class="cta-btn btn-reserve"><i class="fa-regular fa-calendar-check"></i> 体験予約</a>
+  </div>
+
+  <footer class="footer">
+    <!-- Same standard footer -->
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <img src="assets/images/s-gym_logo.png" alt="SCORPION GYM" width="250" class="footer-logo">
+          <p>SCORPION GYM (ブラジリアン柔術・No-Gi)<br>〒563-0035 大阪府池田市豊島南2-8-16-A</p>
+        </div>
+        <div class="footer-links">
+          <h3>Menu</h3>
+          <ul><li><a href="index.html">HOME</a></li><li><a href="beginners.html">はじめての方へ</a></li><li><a href="pricing.html">クラス・料金</a></li><li><a href="instructors.html">インストラクター</a></li></ul>
+        </div>
+        <div class="footer-links">
+          <h3>About</h3>
+          <ul><li><a href="schedule.html">スケジュール</a></li><li><a href="access.html">アクセス・店舗情報</a></li><li><a href="faq.html" class="active">よくあるご質問</a></li><li><a href="contact.html">お問合せ・体験予約</a></li><li><a href="privacy.html">プライバシーポリシー</a></li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 SCORPION GYM. All rights reserved.</p></div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
