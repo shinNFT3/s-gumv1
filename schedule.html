@@ -158,8 +158,14 @@
 
     .schedule-table-wrapper .class-name {
       font-weight: bold;
-      font-size: 15px;
+      font-size: 13px;
       line-height: 1.4;
+    }
+
+    .schedule-table-wrapper .class-time {
+      font-size: 11px;
+      margin-bottom: 2px;
+      line-height: 1.2;
     }
 
     .schedule-table-wrapper tbody tr {
@@ -218,8 +224,11 @@
       color: #eee;
     }
 
-    .schedule-table-wrapper .reset-text {
-      font-size: 12px;
+    .schedule-table-wrapper .reset-info {
+      padding: 2px 0;
+      font-size: 11px;
+      text-align: center;
+      border-bottom: 1px solid #e0e0e0;
     }
 
     /* 不要になったハードコード色用クラスを削除し、親要素の色継承に委ねます */
@@ -381,7 +390,7 @@
                   <td class="empty">-</td>
                   <td class="empty">-</td>
                   <td class="bg-open">
-                    <div class="class-box"><span style="font-size: 11px; margin-bottom: 2px;">10:00-10:30</span><span
+                    <div class="class-box"><span class="class-time">10:00-10:30</span><span
                         class="class-name">フリーマット</span></div>
                   </td>
                   <td class="empty">-</td>
@@ -394,7 +403,7 @@
                   <td class="empty">-</td>
                   <td class="empty">-</td>
                   <td rowspan="2" class="bg-jiujitsu-beginner">
-                    <div class="class-box"><span style="font-size: 11px; margin-bottom: 2px;">10:30-11:30</span><span
+                    <div class="class-box"><span class="class-time">10:30-11:30</span><span
                         class="class-name">柔術 初級</span></div>
                   </td>
                   <td class="empty">-</td>
@@ -416,7 +425,7 @@
                   <td class="empty">-</td>
                   <td class="empty">-</td>
                   <td class="bg-jiujitsu-spar">
-                    <div class="class-box"><span style="font-size: 11px; margin-bottom: 2px;">11:30-12:00</span><span
+                    <div class="class-box"><span class="class-time">11:30-12:00</span><span
                         class="class-name">柔術 スパー</span></div>
                   </td>
                   <td class="empty">-</td>
@@ -430,13 +439,12 @@
                   <td class="empty">-</td>
                   <td style="padding: 0; vertical-align: top; height: 70px;">
                     <div style="height: 100%; display: flex; flex-direction: column;">
-                      <div class="bg-reset"
-                        style="padding: 2px 0; font-size: 11px; text-align: center; border-bottom: 1px solid #e0e0e0;">
+                      <div class="bg-reset reset-info">
                         マットリセット</div>
                       <div class="bg-open"
                         style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 2px 0;">
-                        <span style="font-size: 10px; margin-bottom: 2px; line-height: 1;">12:05-12:30</span>
-                        <span class="class-name" style="font-size: 13px; line-height: 1;">フリーマット</span>
+                        <span class="class-time">12:05-12:30</span>
+                        <span class="class-name">フリーマット</span>
                       </div>
                     </div>
                   </td>
@@ -453,27 +461,27 @@
                   <td class="time-col">20:00-20:30</td>
                   <!-- MON -->
                   <td class="bg-open">
-                    <div class="class-box"><span style="font-size: 11px; margin-bottom: 2px;">20:00-20:30</span><span
+                    <div class="class-box"><span class="class-time">20:00-20:30</span><span
                         class="class-name">フリーマット</span></div>
                   </td>
                   <!-- TUE -->
                   <td class="bg-open">
-                    <div class="class-box"><span style="font-size: 11px; margin-bottom: 2px;">20:00-20:30</span><span
+                    <div class="class-box"><span class="class-time">20:00-20:30</span><span
                         class="class-name">フリーマット</span></div>
                   </td>
                   <!-- WED -->
                   <td rowspan="4" class="bg-open">
-                    <div class="class-box"><span style="font-size: 11px; margin-bottom: 2px;">20:00-22:00</span><span
+                    <div class="class-box"><span class="class-time">20:00-22:00</span><span
                         class="class-name">フリーマット</span></div>
                   </td>
                   <!-- THU -->
                   <td class="bg-open">
-                    <div class="class-box"><span style="font-size: 11px; margin-bottom: 2px;">20:00-20:30</span><span
+                    <div class="class-box"><span class="class-time">20:00-20:30</span><span
                         class="class-name">フリーマット</span></div>
                   </td>
                   <!-- FRI -->
                   <td class="bg-open">
-                    <div class="class-box"><span style="font-size: 11px; margin-bottom: 2px;">20:00-20:30</span><span
+                    <div class="class-box"><span class="class-time">20:00-20:30</span><span
                         class="class-name">フリーマット</span></div>
                   </td>
                   <!-- SAT -->
@@ -484,23 +492,23 @@
                   <td class="time-col">20:30-21:00</td>
                   <!-- MON -->
                   <td rowspan="3" class="bg-jiujitsu-spar">
-                    <div class="class-box"><span style="font-size: 11px; margin-bottom: 2px;">20:30-22:00</span><span
+                    <div class="class-box"><span class="class-time">20:30-22:00</span><span
                         class="class-name">柔術スパー</span></div>
                   </td>
                   <!-- TUE -->
                   <td rowspan="2" class="bg-jiujitsu-all">
-                    <div class="class-box"><span style="font-size: 11px; margin-bottom: 2px;">20:30-21:30</span><span
+                    <div class="class-box"><span class="class-time">20:30-21:30</span><span
                         class="class-name">柔術<br>オールレベル</span></div>
                   </td>
                   <!-- WED (rowspan) -->
                   <!-- THU -->
                   <td rowspan="2" class="bg-nogi-all">
-                    <div class="class-box"><span style="font-size: 11px; margin-bottom: 2px;">20:30-21:30</span><span
+                    <div class="class-box"><span class="class-time">20:30-21:30</span><span
                         class="class-name">No-Gi<br>オールレベル</span></div>
                   </td>
                   <!-- FRI -->
                   <td rowspan="2" class="bg-jiujitsu-all">
-                    <div class="class-box"><span style="font-size: 11px; margin-bottom: 2px;">20:30-21:30</span><span
+                    <div class="class-box"><span class="class-time">20:30-21:30</span><span
                         class="class-name">柔術<br>オールレベル</span></div>
                   </td>
                   <!-- SAT -->
@@ -519,18 +527,18 @@
                   <!-- MON (rowspan) -->
                   <!-- TUE -->
                   <td class="bg-jiujitsu-spar">
-                    <div class="class-box"><span style="font-size: 11px; margin-bottom: 2px;">21:30-22:00</span><span
+                    <div class="class-box"><span class="class-time">21:30-22:00</span><span
                         class="class-name">柔術スパー</span></div>
                   </td>
                   <!-- WED (rowspan) -->
                   <!-- THU -->
                   <td class="bg-nogi-spar">
-                    <div class="class-box"><span style="font-size: 11px; margin-bottom: 2px;">21:30-22:00</span><span
+                    <div class="class-box"><span class="class-time">21:30-22:00</span><span
                         class="class-name">No-Giスパー</span></div>
                   </td>
                   <!-- FRI -->
                   <td class="bg-jiujitsu-spar">
-                    <div class="class-box"><span style="font-size: 11px; margin-bottom: 2px;">21:30-22:00</span><span
+                    <div class="class-box"><span class="class-time">21:30-22:00</span><span
                         class="class-name">柔術スパー</span></div>
                   </td>
                   <!-- SAT -->
@@ -542,65 +550,60 @@
                   <!-- MON -->
                   <td style="padding: 0; vertical-align: top; height: 70px;">
                     <div style="height: 100%; display: flex; flex-direction: column;">
-                      <div class="bg-reset"
-                        style="padding: 2px 0; font-size: 11px; text-align: center; border-bottom: 1px solid #e0e0e0;">
+                      <div class="bg-reset reset-info">
                         マットリセット</div>
                       <div class="bg-open"
                         style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 2px 0;">
-                        <span style="font-size: 10px; margin-bottom: 2px; line-height: 1;">22:05-22:30</span>
-                        <span class="class-name" style="font-size: 13px; line-height: 1;">フリーマット</span>
+                        <span class="class-time">22:05-22:30</span>
+                        <span class="class-name">フリーマット</span>
                       </div>
                     </div>
                   </td>
                   <!-- TUE -->
                   <td style="padding: 0; vertical-align: top; height: 70px;">
                     <div style="height: 100%; display: flex; flex-direction: column;">
-                      <div class="bg-reset"
-                        style="padding: 2px 0; font-size: 11px; text-align: center; border-bottom: 1px solid #e0e0e0;">
+                      <div class="bg-reset reset-info">
                         マットリセット</div>
                       <div class="bg-open"
                         style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 2px 0;">
-                        <span style="font-size: 10px; margin-bottom: 2px; line-height: 1;">22:05-22:30</span>
-                        <span class="class-name" style="font-size: 13px; line-height: 1;">フリーマット</span>
+                        <span class="class-time">22:05-22:30</span>
+                        <span class="class-name">フリーマット</span>
                       </div>
                     </div>
                   </td>
                   <!-- WED -->
                   <td style="padding: 0; vertical-align: top; height: 70px;">
                     <div style="height: 100%; display: flex; flex-direction: column;">
-                      <div class="bg-reset"
-                        style="padding: 2px 0; font-size: 11px; text-align: center; border-bottom: 1px solid #e0e0e0;">
+                      <div class="bg-reset reset-info">
                         マットリセット</div>
                       <div class="bg-training"
                         style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 2px 0; border-left: none;">
-                        <span style="font-size: 10px; margin-bottom: 2px; line-height: 1;">22:05-22:30</span>
-                        <span class="class-name" style="font-size: 13px; line-height: 1; color: #b38600;">補強トレ</span>
+                        <span class="class-time">22:05-22:30</span>
+                        <span class="class-name" style="color: #b38600;">補強トレ</span>
                       </div>
                     </div>
                   </td>
                   <!-- THU -->
                   <td style="padding: 0; vertical-align: top; height: 70px;">
                     <div style="height: 100%; display: flex; flex-direction: column;">
-                      <div class="bg-reset"
-                        style="padding: 2px 0; font-size: 11px; text-align: center; border-bottom: 1px solid #e0e0e0;">
+                      <div class="bg-reset reset-info">
                         マットリセット</div>
                       <div class="bg-training"
                         style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 2px 0; border-left: none;">
-                        <span style="font-size: 10px; margin-bottom: 2px; line-height: 1;">22:05-22:30</span>
-                        <span class="class-name" style="font-size: 13px; line-height: 1; color: #b38600;">補強トレ</span>
+                        <span class="class-time">22:05-22:30</span>
+                        <span class="class-name" style="color: #b38600;">補強トレ</span>
                       </div>
                     </div>
                   </td>
                   <!-- FRI -->
                   <td style="padding: 0; vertical-align: top; height: 70px;">
                     <div style="height: 100%; display: flex; flex-direction: column;">
-                      <div class="bg-reset"
-                        style="padding: 2px 0; font-size: 11px; text-align: center; border-bottom: 1px solid #e0e0e0;">
+                      <div class="bg-reset reset-info">
                         マットリセット</div>
                       <div class="bg-open"
                         style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 2px 0;">
-                        <span style="font-size: 10px; margin-bottom: 2px; line-height: 1;">22:05-22:30</span>
-                        <span class="class-name" style="font-size: 13px; line-height: 1;">フリーマット</span>
+                        <span class="class-time">22:05-22:30</span>
+                        <span class="class-name">フリーマット</span>
                       </div>
                     </div>
                   </td>
