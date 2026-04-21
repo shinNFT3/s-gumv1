@@ -168,7 +168,58 @@
       </div>
     </section>
 
+
+    <!-- 入会規約 Section -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">入会規約</h2>
+        <div style="max-width: 800px; margin: 0 auto;">
+          <div class="accordion-item" id="terms-accordion" style="border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+            <button onclick="toggleAccordion()" id="accordion-btn"
+              style="width:100%; display:flex; justify-content:space-between; align-items:center;
+                     padding:22px 28px; background:#fff; border:none; cursor:pointer;
+                     font-size:1.05rem; font-weight:700; text-align:left; color:#333;
+                     font-family:inherit; transition: background 0.3s;">
+              <span><i class="fa-solid fa-file-lines" style="color:var(--primary); margin-right:10px;"></i>SCORPION GYM 入会規約を確認する</span>
+              <i class="fa-solid fa-chevron-down" id="accordion-icon" style="color:var(--primary); transition: transform 0.3s;"></i>
+            </button>
+            <div id="accordion-body" style="display:none; padding:0 28px 28px; background:#fff;">
+              <p style="font-size:0.8rem; color:var(--text-light); margin-bottom:20px; padding-top:5px; border-top:1px solid #eee; padding-top:20px;">最終更新日：2023年4月1日</p>
+              <ol style="padding-left:1.5em; display:flex; flex-direction:column; gap:16px; color:#444; font-size:0.92rem; line-height:1.85;">
+                <li>会員にはスポーツ保険の加入を義務付けます。各個人の加入に関してあくまでも参加者本人の責務とします。練習中及び試合等の負傷に対しての治療に関しては各個人のスポーツ保険にて対応いただくものとします。保険にて対応範囲以上の負担は本人負担とします。</li>
+                <li>伝染及び感染力の強い病気の場合、又は健康上練習に支障のある場合は医師が許可するまで練習に参加はできないものとします。</li>
+                <li>他の団体等に出稽古や試合出場を希望する際は事前に許可を得て下さい。</li>
+                <li>練習の参加回数に関係なく所定の月会費が発生します。練習に参加できない場合や、月の途中でやむを得ず退会する場合は、すでに納めた入会金、会費は、理由のいかんにかかわらず返金いたしかねます。</li>
+                <li>退会する場合は、希望月の前月の10日迄に所定の書類（要押印）を提出して下さい。11日以降に提出の場合は、希望月の翌月末の退会となり、月会費の引き落としを停止する事はできませんのでご注意下さい。退会は、未納分の月会費をすべて支払っていただいた後、退会とさせていただきます。休会する場合は、希望月の前月の月末迄に所定の書類（要押印）を提出して下さい。復帰する月の会費として、前払いにて１か月分の月会費の引き落としが実行されます。会員として復帰しない場合は返金は致しません。退会及び休会の申請は、メールや電話での申告は本人確認ができない為、受け付けておりませんので所定の書類を必ず提出してください。（書類の提出がないと会費は発生し続けます）</li>
+                <li>類似及び重複する種目団体との二重所属は禁止します。</li>
+                <li>住所等の登録内容及び当会に指定された連絡方法に変更が生じた時はすみやかに届け出てください。</li>
+                <li>会員としてふさわしくない行為があった場合は強制退会とする場合があります。</li>
+                <li>道場の運営上の都合によりスケジュールや会費金額を変更する場合があります。</li>
+                <li>天災地変、気象災害、地震またはその他不可抗力や社会情勢の著しい変化があったとき、またはその恐れがあるときには臨時休業または閉鎖する場合があります。その場合、既に収めた会費等は返金致しません。</li>
+                <li>活動の記録及び宣伝等（ウェブサイト掲載等）の目的で、個人情報に該当する映像や音声等の撮影を行い、使用する場合があります。</li>
+                <li>暴力団関係者及びそれに類似する団体に、在籍及び交友関係のある方は一切の立ち入りをお断りいたします。また、入会後判明した場合は、速やかに退会していただきます。支払った会費等は一切返金はいたしません。</li>
+                <li>規約内容に関わらず当道場がふさわしくないと判断した会員の行動・事故・事件等による当道場の損益の発生に対し損害賠償を請求する場合があります。</li>
+                <li>入会規約は会員の同意を得ずとも改訂できるものとします。最新の規約はスコーピオンジムホームページ内に記載されているものとします。</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      function toggleAccordion() {
+        const body = document.getElementById('accordion-body');
+        const icon = document.getElementById('accordion-icon');
+        const btn  = document.getElementById('accordion-btn');
+        const isOpen = body.style.display === 'block';
+        body.style.display = isOpen ? 'none' : 'block';
+        icon.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(180deg)';
+        btn.style.background = isOpen ? '#fff' : '#fafafa';
+      }
+    </script>
+
     <!-- Drop-in and Personal Training Section -->
+
     <section class="section">
       <div class="container">
         <h2 class="section-title">その他のメニュー</h2>
