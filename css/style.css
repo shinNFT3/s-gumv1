@@ -1,14 +1,14 @@
 :root {
   --primary: #d32f2f; /* Deep Red for MMA/Combative vibe */
-  --black: #111111;
-  --dark-gray: #222222;
+  --black: #595959;
+  --dark-gray: #404040;
   --white: #ffffff;
   --gray: #f5f5f5;
   --text: #333333;
   --text-light: #777777;
   --font-base: 'Noto Sans JP', 'Inter', sans-serif;
   --font-heading: 'Inter', 'Noto Sans JP', sans-serif;
-  --overlay-dark: rgba(17, 17, 17, 0.7);
+  --overlay-dark: rgba(89, 89, 89, 0.7);
   --header-height: 80px;
 }
 
@@ -119,7 +119,7 @@ img, video {
 }
 
 .header.scrolled {
-  background-color: rgba(17, 17, 17, 0.95);
+  background-color: rgba(89, 89, 89, 0.95);
   backdrop-filter: blur(10px);
   padding: 10px 0;
   border-bottom: 1px solid rgba(255,255,255,0.1);
@@ -473,7 +473,7 @@ body.sub-page .header {
   .nav {
     position: fixed;
     top: 0; left: 0; width: 100%; height: 100vh;
-    background-color: rgba(17, 17, 17, 0.98);
+    background-color: rgba(89, 89, 89, 0.98);
     flex-direction: column;
     justify-content: center;
     align-items: center;
