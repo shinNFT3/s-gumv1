@@ -345,27 +345,9 @@ body.sub-page .header {
   font-size: 1.1rem;
 }
 
-.concept-image {
-  position: relative;
-  padding: 15px 0 0 15px;
-}
-.concept-image::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 85%;
-  height: 85%;
-  background: var(--primary);
-  opacity: 0.15;
-  border-radius: 8px;
-  z-index: 0;
-}
 .concept-image img {
   border-radius: 8px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-  position: relative;
-  z-index: 1;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
 }
 
 /* Instagram Base (retained and refined) */
