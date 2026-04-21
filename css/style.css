@@ -500,6 +500,7 @@ body.sub-page .header {
 
 @media (min-width: 769px) {
   .sticky-cta { display: none; }
+  .sp-br { display: none; }
 }
 
 /* Utility / Subpage bases */
